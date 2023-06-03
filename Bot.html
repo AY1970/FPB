@@ -1,14 +1,193 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Financial Planning Bureau</title>
-  </head>
-  <body>
+<head>
+  <title>Financial Planning Bureau</title>
+  <style>
+    /* Add custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    .button {
+      background-color: #f1f1f1;
+      border: none;
+      color: #333;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #ddd;
+    }
+    .content {
+      display: flex;
+      margin-top: 40px;
+    }
+    .image {
+      flex: 1;
+      padding-left: 20px;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .text {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .divider {
+      width: 100%;
+      height: 20px;
+      background-color: #f1f1f1;
+      box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+   <div class="header">
     <h1>Financial Planning Bureau</h1>
-    <p>Are you looking for a framework to help you plan your financial future? Look no further than the Financial Planning Bureau! Our model helps you identify how much money you need, what sources of income will be available, and the expenses you expect.</p>
-    <p>Whether you're a business owner, entrepreneur, or simply someone who wants to plan ahead, our financial planning model can help. We start by creating a budget so you know where your earnings are coming from and where your spending is going.</p>
-    <p>Then, we use this knowledge to balance your earning, spending, and build up assets like savings. With our model, you can take control of your financial future and ensure that you're on the path to success.</p>
-    <p>To get started with the Financial Planning Bureau, simply click the button below to open our Telegram chatbot. Our bot will guide you through the process of creating a budget and planning for your financial future. We look forward to working with you!</p>
-    <a href="https://t.me/AVFPB_bot" target="_blank">Open Chatbot on Telegram</a>
-  </body>
+    <div class="buttons">
+      <a class="button" href="https://www.binance.com/en" target="_blank">Link 1</a>
+      <a class="button" href="https://www.msn.com/en-xl/money/portfolio?ocid=winp2fptaskbarhover&cvid=bcd35a0390f34828f3d04cd1c337697d&ei=7&id=bjqejc&duration=1D" target="_blank">Link 2</a>
+      <a class="button" href="https://www.spglobal.com/ratings/en/" target="_blank">Link 3</a>
+      <a class="button" href="https://www.marketwatch.com/investing/index/djia" target="_blank">Link 4</a>
+    </div>
+    <div class="weather-input" style="margin-top: 28px;">
+      <input type="text" id="city-input" placeholder="Enter city">
+      <button id="weather-button">Get weather</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('weather-button').addEventListener('click', function() {
+      var city = document.getElementById('city-input').value;
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/get_weather?city=' + encodeURIComponent(city), true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          var weatherInfo = response.weather_info;
+          // Дальнейшая обработка полученной информации о погоде
+          console.log(weatherInfo);
+        }
+      };
+      xhr.send();
+    });
+  </script>
+  </div>
+  <div class="content">
+    <div class="image">
+      <img src="Financial-Planning_LI.jpg" alt="Image" width="400">
+    </div>
+    <div class="text">
+      <p>Are you looking for a framework to help you plan your financial future? Look no further than the Financial
+        Planning Bureau! Our model helps you identify how much money you need, what sources of income will be available,
+        and the expenses you expect.</p>
+      <p>Whether you're a business owner, entrepreneur, or simply someone who wants to plan ahead, our financial
+        planning model can help. We start by creating a budget so you know where your earnings are coming from and
+        where your spending is going.</p>
+      <p>Then, we use this knowledge to balance your earning, spending, and build up assets like savings.
+        With our model, you can take control of your financial future and ensure that you're on the path to success.</p>
+      <p>To get started with the Financial Planning Bureau, simply click the button below to open our Telegram chatbot.
+        Our bot will guide you through the process of creating a budget and planning for your financial future. We look forward to working with you!</p>
+      <a href="https://t.me/AVFPB_bot" target="_blank">Open Chatbot on Telegram</a>-->
+      </div>
+
+
+  </div>
+<div class="main-content">
+    <article>
+      <div class="divider"></div>
+      <header>
+        <h2>Types of Financial Planning Models</h2>
+        <p>Published on May 3, 2023</p>
+      </header>
+ </header>
+  <p>So far, we’ve spoken mainly about financial planning models that encompass the whole business, but there are
+    several subtypes of financial model examples that might be used in different scenarios. These include:</p>
+  <p><strong>Project Financial Modelling:</strong> Unlike financial planning models that are based on data and
+    assumptions about your whole business, project-based financial modeling is based on a single (usually large)
+    project. All of the same financial data modeling input and data apply, but it’s all specific to the project
+    itself. So, instead of your accounting records, you might use your estimating for the project to set up certain
+    elements of this financial model example.</p>
+  <p><strong>Pricing Models:</strong> The past couple of years has been volatile – to say the least – when it comes to
+    pricing. Labor shortages, supply chain bottlenecks, and more have created a perfect storm. Using financial data
+    about your business to build pricing models that you can update quickly and easily – or that you can use to run
+    various pricing scenarios before you choose what you plan to do – is a great way to stay on top of pricing in a
+    challenging marketplace.</p>
+  <p><strong>Three-Way Financial Models:</strong> Three-way financial models, or integrated financial statement models
+    as they are also known, are the financial planning models you’re most likely to know and recognize. This financial
+    model example draws data from your income statement, cash flow statement, and balance sheet to create a snapshot of
+    present and past performance. Your financial planner and analyst can then use this data to make assumptions about
+    the future based on a range of scenarios. Taking the time to build financial models so you can test different
+    approaches to your business removes some of the risks in making big decisions. Because you can use financial data
+    modeling to try different approaches before you commit, you can choose the approach that has the greatest likelihood
+    of success.</p>
+  <p><strong>Reporting Models:</strong> Unlike financial models that are for planning for the future, reporting models
+    are more focused on what is actually happening now. Often, current data will be compared to previous years so that
+    you can verify that your business is growing at the rate you expected.</p>
+  <p><strong>Long-Term Financial Planning Model:</strong> Financial planning models can be for the short term, medium
+    term, or long term. Most companies create financial model examples for each of these time frames so that they can
+    get the complete picture from their financial data. Long-term financial planning models might be useful when you
+    are planning an exit strategy for a company by giving you an idea of what the company might be valued at a fixed
+    point in the future. Long-term financial data modeling can also help to decide if accessing a large amount of
+    financing now might be the right decision and how it might affect your financial situation in the future.</p>
+  <p><strong>Examples of Financial Planning Models:</strong> Now that you know what financial planning models are, you
+    might be wondering how you can use them for your business. One example might be if you are looking for a business
+    partner or investor. They will probably want to know not only what your business has done so far but what you expect
+    to happen in the future. Another example of a financial model and how it can be used for strategizing is if you
+    want to invest in new equipment for your business. A financial planning model will help you to weigh the cost, the
+    return on investment, and more.</p>
+      <p><strong>Strategic and Financial Planning Models and Principles:</strong> All financial planning models are based on a
+    mix of known figures (budgets, income, expenses, and so on) and predictions and assumptions. It’s important that
+    those assumptions are based on realistic possibilities. For instance, if you have steadily had 5 to 7% growth for
+    a few years, changing that to 10% without making corresponding changes in your business will be a big red flag –
+    particularly if you are building a financing model for a bank or lender.</p>
+
+    </article>
+  </div>
+  <div class="divider"></div>
+  <div class="sidebar">
+    <h3>Related articles</h3>
+    <ul>
+      <li><a href="https://www.qualtrics.com/experience-management/product/pricing-strategies/">Article 1</a></li>
+      <li><a href="https://www.infrastructure.gov.au/infrastructure-transport-vehicles/vehicles/rvs/model-reports">Article 2</a></li>
+      <li><a href="https://smallbusiness.chron.com/fundamental-principles-strategic-business-planning-models-80363.html">Article 3</a></li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>My email: valoviy@gmail.com</p>
+    <p>WhatsApp: +380 67 507 94 25</p>
+    <p>Viber: +380 50 516 48 49</p>
+    <p>&copy; 2023 FPB website. All rights reserved.</p>
+  </div>
+</body>
 </html>
