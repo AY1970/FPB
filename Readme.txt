@@ -23,6 +23,6 @@ Description of the chatbot's functionality.
 Button or link to open the chat with the bot in Telegram.
 Link to the landing page: https://github.com/AY1970/FPB/blob/gh-pages/Bot.html
 
-Link to open the Telegram chat with the bot: https://t.me/<@AVFPB_bot:6133590615:AAHDZf0DQYEq1zUeJQkcEYcJKHoqSF78RQc>
+Link to open the Telegram chat with the bot: https://t.me/AVFPB_bot
 
 Link to the Backend Part: https://github.com/<your-backend-repo>
